@@ -1,12 +1,11 @@
 body {
-back
+background-color: #fef5da;
 }
 
-h1 {
-
+h1 { background-color: grey; color: white; text-align:center; 
 }
 
-img {
+img { size-adjust: 300px; border-radius: 0%; vertical-align: middle 
 
 }
 
@@ -15,6 +14,6 @@ ul {
 }
 
 li {
-
+    display: inline;
 }
 
