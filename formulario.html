@@ -8,9 +8,8 @@
             <table border="3px" >
                 
                     <tr>
-                        <td align="left" width="70% >
-                        Nombre
-                        <!-- esto es un comentario-->
+                        <td align="left" width="70% ">
+                        <!-- esto es un comentario -->
                       <form action="http://ncoge.com/phps/formulario.php" method="post">
                         <label for="nombre">Nombre</label> 
                         <input type="text" name="nombre" value="" />
@@ -74,10 +73,20 @@
                             data">
                             <fieldset>
                             <legend>Domino los siguientes programas</legend>
-                            <input name="contador" type="checkbox" value="si" /> Writer
-                            <input name="contador" type="checkbox" value="si" /> Base
-                            <input name="contador" type="checkbox" value="si" /> Cale
-                            <input name="contador" type="checkbox" value="si" /> Impress
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input name="contador" type="checkbox" value="si" /> Writer
+                                        <input name="contador" type="checkbox" value="si" /> Base
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <input name="contador" type="checkbox" value="si" /> Cale
+                                    <input name="contador" type="checkbox" value="si" /> Impress
+                                    </td>
+                                </tr>
+                            </table>
                             </fieldset>
                             <fieldset>
                             <legend>Trabajo con el siguiente sistema operativo</legend>     
@@ -100,8 +109,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <br><input type="submit" value="Enviar"><input type="reset" name="limpiar" value="Borrar datos del formulario" />
-                    </tr>
+                       
+                    
             
 
             
@@ -111,7 +120,11 @@
 
             
             </table>
-           
+            <div>
+                <center>
+                    <input type="reset" name="limpiar" value="Reiniciar" /><input type="image" value=img src="https://previews.123rf.com/images/sarahdesign/sarahdesign1503/sarahdesign150302277/37814977-send-button.jpg" width="100px">
+                </center>
+                </div>
     </form>
 </body>
 </html>
