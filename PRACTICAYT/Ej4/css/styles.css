@@ -17,10 +17,13 @@ body {
     width: 90%;
     /* 3- centrar */
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
     text-align: center;
+    
 }
 
 .youtuber, .footer, .header {
@@ -40,6 +43,7 @@ body {
 }
 
 .imageHome{
+    width: 60%;
     border:black 4px solid;
     border-radius: 3%;
     /* 7- tamanyo */
@@ -54,7 +58,8 @@ body {
 
     /* 8- redondear la imagen*/
     width: 150px;
-    height: 150px;    
+    height: 150px;
+    border-radius: 80%;    
     /* Se utiliza en imágenes y videos 
     para asegurarse de que siempre llenen 
     completamente el contenedor, manteniendo 
