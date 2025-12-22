@@ -26,7 +26,7 @@ body {
     
 }
 
-.youtuber, .footer, .header {
+.youtuber, footer, header {
     /* 4- color de fondo */
     border: 2px solid lightgray;
     /* 5- redondear el borde */
@@ -37,7 +37,7 @@ body {
     text-align: center;
     box-shadow: 5px solid black;    
 }
-.footer {
+footer {
     padding: 0px;
     color: white;
 }
@@ -78,7 +78,7 @@ body {
     font-size: 1em;
 }
 
-#menu {
+nav {
     /* 9- quita los puntos */
     
 }
@@ -92,14 +92,14 @@ li {
     padding-left: 5px;
 }
 
-#menu a {
+nav a {
     /* 13- enlaces blancos */
     color: white;
     /* 14- sin subrayado */
     text-decoration: none;
 }
 
-#menu a:hover {
+nav a:hover {
     /* 15- cambia el color al subrayado*/
     border-bottom: 2px red solid;
 }
@@ -123,7 +123,7 @@ li {
 }
 
 @media all and (max-width: 700px) {
-    .youtuber, .footer {
+    .youtuber, footer {
         /* 17- cambia el color al BORDE*/
         border: 2px solid red;
     }   
@@ -137,3 +137,4 @@ li {
         /* 19- cambia el color al boton*/
     }    
 }
+header {}
