@@ -1,0 +1,46 @@
+.menu{
+text-align: center;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: solid 2px;
+margin-bottom: 10px;
+}
+
+.main{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    border: 2px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+   
+
+}
+
+.articulo{
+    display: flex;
+    width: 500px;
+    flex-flow: column;
+    border-left: 2px solid black;
+
+}
+
+.tarjeta-imagen{
+display: flex;
+width: 20%;
+}
+.tarjeta-text{
+display: flex;
+width: 50%;
+}
+
+.footer{
+    text-align: center;
+    display: flex;
+}
+.tarjeta-imagen img{
+    width: 250px;
+    display: flex;
+    
+}

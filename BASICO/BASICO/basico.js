@@ -6,24 +6,39 @@
 
 let run=document.getElementById("run")
 
- run.addEventListener("click", (e) => {
-     solucion.innerHTML=numero.value *2
+function multiplica(a,b){
+     let solucionn=a * b
+     console.log(solucionn)
+     return solucionn
+}
+
+let mul=multiplica(10,20)
+console.log("La multiplicación es "+mul)
+
+
+
+
+// multtiplicar numero 1 por 2
+//  run.addEventListener("click", (e) => {
+//      solucion.innerHTML=numero.value *2
 
      
-})
+// })
 
-run.addEventListener("click", (e) => {
-     let num=(numero2.value) 
-     console.log(num)
-
-     
-})
-run.addEventListener("click", (e) => {
-     let num=(numero.value) * (numero2.value)
-     console.log(num)
+// run.addEventListener("click", (e) => {
+//      let num=(numero2.value) 
+//      console.log(num)
 
      
-})
+// })
+// run.addEventListener("click", (e) => {
+//      let num=(numero.value) * (numero2.value)
+//      console.log(num)
+
+     
+// })
+
+// hacer que el numero 1 aprezaca el numero de veces de numero 2
 run.addEventListener("click", (e) => {
      let num=(numero.value)
      let num2=(numero2.value)
@@ -43,7 +58,7 @@ run.addEventListener("click", (e) => {
      
 })
 
-// otra forma 
+// // otra forma multiplicar los numeros
 
 //  run.addEventListener("click", (e) => {
 //      solucion.innerHTML=(numero.value) * (numero2.value)
@@ -55,6 +70,8 @@ run.addEventListener("click", (e) => {
 
 
 
- solucion.innerHTML=("Hola")
+//  solucion.innerHTML=("Hola")
 
- console.log("Estoy en el javascript:"+numero.value)
+//  console.log("Estoy en el javascript:"+numero.value)
+
+

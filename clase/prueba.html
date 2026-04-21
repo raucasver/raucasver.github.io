@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tiempo ahora</h1>
+    <input type="button" id="run" value="RUN">
+    <div id="resultado"></div>
+
+    <script>
+        //variables
+        let boton=document.getElementById("run")
+        let resultado=document.getElementById("resultado")
+
+        //evenetos
+        boton.addEventListener("click", () =>{
+            fetch("https://timeapi.io/api/Time/current/zone?timeZone=Europe/Madrid")
+            .then(response => {
+            //resultado.innerHTML="Todo Bien!!!"
+            return response.json()
+        
+        })
+        
+            .then(datapepito => resultado.innerHTML=datapepito.time+" es "+datapepito.dayOfWeek+" en "+datapepito.timeZone)
+            .catch(error => error.innerHTML="ERRRORRRRRR: "+error)
+
+
+        })
+    </script>
+</body>
+</html>
