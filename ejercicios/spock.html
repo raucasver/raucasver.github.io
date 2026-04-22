@@ -193,7 +193,9 @@
 
         listaOpciones.addEventListener("change", function() {
             /*  ACABALO  */
-                
+            jugadorEscoge = listaOpciones.value
+            console.log(jugadorEscoge)
+            quienGana(jugadorEscoge, ordenadorEscoge)
             /*  FIN ACABALO  */            
 
         });
@@ -245,16 +247,30 @@
             resultadoEl.className = "resultado-veredicto veredicto-espera";
             resultadoEl.textContent = "—";
             btnReiniciar.style.display = "none";
+
             descuenta();
         }
 
         //Promesa cuando pase el tiempo establecido el ordenador escoge
         function descuenta(){
             /*  ACABALO  */
+            setTimeout(() => {
+                let rn = randomInt(opciones.length-1)
+                //console.log(rn)
+                ordenadorEscoge=opciones[rn]
+                console.log(ordenadorEscoge)
+                quienGana(jugadorEscoge, ordenadorEscoge)
+                
+            }, tiempoPensar*1000);
+
 
             /*  FIN ACABALO  */            
 
         }
+        function randomInt(max){
+            return Math.floor(Math.random() * (max+1))
+        }
+
 
         // el ordenador escoge tras pasar un tiempo
         descuenta();
