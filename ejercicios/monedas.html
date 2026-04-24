@@ -9,7 +9,7 @@
             background-color: red;
             border: 2px solid black;
         }
-        .
+        
     </style>
 </head>
 <body>
@@ -30,6 +30,7 @@
         //funciones
         /*
             Devuelve un li con los datos de la moneda
+            
         */
         function creaElemento(valor, clave) {            
             let total= Math.round(parseFloat(cantidad.value)*parseFloat(valor)*100)/ 100
@@ -39,8 +40,8 @@
             liElement.setAttribute("data-id","pepe")
             liElement.textContent=valor+"=>"+clave+"::"+total*parseFloat(valor)
             
-            //let liElement ....
-            /*  FIN ACABALO  */    
+            liElement.textContent = `${cantidad.value} ${moneda} = ${total} ${clave}`
+            
             return liElement
         }
 
@@ -63,7 +64,8 @@
 
             
                         //usa creaElemento(valor, clave)
-                        resultado.appendChild
+                        let li = creaElemento(valor, clave)
+                        resultado.appendChild(li)
                         /*  FIN ACABALO  */    
                     });
                     
@@ -74,6 +76,7 @@
         convertirBtn.addEventListener("click", function(){
             resultado.innerHTML=""
             convertir()
+            
         })
 
 

@@ -68,11 +68,13 @@
     let titulo = document.getElementById('titulo');
     let boton=document.getElementById('boton'); 
     let inputCiudad = document.getElementById('city');
-    boton.addEventListener('click', function() {
+    let weather = document.getElementById('weather');
+    boton.addEventListener('click', function(event) {
       event.preventDefault(); // Evita que el formulario se envíe
       obtenerClima();
     });
 
+    
     // Detectar la tecla Enter en el campo de texto
     inputCiudad.addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
@@ -87,7 +89,7 @@
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&lang=es&units=metric&appid=${apiKey}`;
       titulo.innerHTML="Clima actual " +  ciudad;
       // Usamos fetch para obtener los datos del clima
-      fetch("https://api.openweathermap.org/data/2.5/weather")
+      fetch(url)
         .then(response => {
           if (!response.ok) {
             throw new Error('Error al obtener los datos del clima: ' + response.statusText);
@@ -103,7 +105,11 @@
           // Mostramos los datos en el HTML
           /*  ACABALO  */
           
-            weather.innerHTML="Temperatura es "+temperature+description+humidity
+            weather.innerHTML = `
+            Temperatura: ${temperature}°C <br>
+            Descripción: ${description} <br>
+            Humedad: ${humidity}%
+            `;
 
           /*  FIN ACABALO  */        
         })
